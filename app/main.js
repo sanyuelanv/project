@@ -7,6 +7,6 @@ import Component from './component'
 let main = function(){
 	render(<Component />,document.getElementById('main'))
 }
-window.load = function(){
+window.onload = function(){
 	main()
 }
