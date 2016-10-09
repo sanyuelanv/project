@@ -1,0 +1,79 @@
+.calculator{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.screen{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex:1.0;
+    -ms-flex:1.0;
+    flex:1.0;
+    -webkit-box-flex:1.0;
+    width: 100%;
+    background-color:rgba(0,0,0,.8);
+}
+.btnArr{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex:3.0;
+    -ms-flex:3.0;
+    flex:3.0;
+    -webkit-box-flex:3.0;
+    flex-wrap:wrap;
+    width: 100%;
+}
+.btnArrLine{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex:1.0;
+    -ms-flex:1.0;
+    flex:1.0;
+    -webkit-box-flex:1.0;
+    border-bottom: 1px solid #ccc;
+}
+.btnArrLineLast{
+    composes:btnArrLine;
+    border-bottom: 0px;
+}
+.btn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex:1.0;
+    -ms-flex:1.0;
+    flex:1.0;
+    -webkit-box-flex:1.0;
+    border-right: 1px solid #ccc;
+}
+.btnLast{
+    composes:btn;
+    border-right: 0px;
+}
+.btnBig{
+    composes:btn;
+    -webkit-box-flex:2.0;
+    -ms-flex:2.0;
+    flex:2.0;
+    -webkit-box-flex:2.0;
+    padding-left: 1px;
+}
