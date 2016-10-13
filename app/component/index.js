@@ -2,6 +2,7 @@
 import React from 'react'
 import style from './css/index.css'
 import Work from './work'
+import Show from './show'
 
 class Component extends React.Component{
 	constructor(props){
@@ -10,14 +11,8 @@ class Component extends React.Component{
 	render(){
     	return(
             <div className={style.edit}>
-				<Work {...this.props} />
-                <div className={style.show}>
-                    <div className='markdown'>
-                        <h1 className='title'>标题</h1>
-                        <div className='titleDesc'>author: author</div>
-                        <div className='show_content'></div>
-                    </div>
-                </div>
+				<Work {...this.props.action} />
+                <Show {...this.props.store} />
             </div>
         )
 	}

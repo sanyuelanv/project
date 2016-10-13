@@ -14,7 +14,7 @@ let {Component} = React
 
 let mapStateToProps = (state) =>{
     return {
-        reduxState:{
+        store:{
             Title:state.Title,
             Author:state.Author,
             Content:state.Content,
@@ -23,7 +23,7 @@ let mapStateToProps = (state) =>{
 }
 let mapDispatchToProps = (dispatch) =>{
     return{
-        reduxActions:bindActionCreators(actions,dispatch)
+        action:bindActionCreators(actions,dispatch)
     }
 }
 let Content = connect(mapStateToProps,mapDispatchToProps)(Index)

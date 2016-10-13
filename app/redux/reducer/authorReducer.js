@@ -3,7 +3,7 @@ import * as types from '../action/types'
 
 let reducer = (state={author:'author'},action)=>{
     switch(action.type){
-        case types.TITLE:
+        case types.AUTHOR:
             return {author:action.author}
             break
         default:

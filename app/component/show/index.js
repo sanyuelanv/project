@@ -11,10 +11,12 @@ class Component extends React.Component{
     }
 	render(){
     	return(
-            <div className={style.work}>
-                <Title {...this.props} placeholder='标题'/>
-                <Author {...this.props} placeholder='作者'/>
-                <Content {...this.props} />
+            <div className={style.show}>
+                <div className='markdown'>
+                    <Title  {...this.props.Title} />
+                    <Author {...this.props.Author} />
+                    <Content {...this.props.Content} />
+                </div>
             </div>
         )
 	}
