@@ -1,0 +1,163 @@
+.markdown{
+  flex: 1;
+  -webkit-flex: 1;
+  word-wrap: break-word;
+  overflow-y: auto;
+
+  color: #2f2f2f;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.7;
+}
+.markdown .title{
+  font-size: 3.0rem!important;
+  text-align: center;
+  border-bottom:0px;
+  padding-bottom: 0px;
+  margin:0px;
+}
+.markdown .titleDesc{
+  text-align: center;
+  min-height: 22px;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #999999;
+  font-style: italic;
+  line-height: 1.7;
+}
+/*标题*/
+.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{
+  margin: 0;
+  color: inherit;
+  line-height: 1.8;
+  text-rendering: optimizelegibility;
+}
+.markdown h1,.markdown h2{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin: 0px auto 15px;
+}
+.markdown h1{font-size: 26px;}
+.markdown h2{font-size: 24px;}
+.markdown h3{font-size: 22px;}
+.markdown h4{font-size: 20px;}
+.markdown h5{font-size: 18px;}
+.markdown h6{font-size: 16px;}
+/*列表*/
+.markdown ul,.markdown ol{
+  text-align: justify;
+  text-justify: inter-ideograph;
+  padding: 0;
+  margin: 0 0 20px 25px;
+}
+.markdown li{line-height: 30px;}
+/*正文*/
+.markdown p{
+  margin: 0 0 25px 0;
+}
+/*引用*/
+.markdown blockquote{
+  padding: 10px 15px;
+  margin: 0 0 20px;
+  background-color: whitesmoke;
+  border-left: 4px solid #009688;
+  word-break: break-word;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 30px;
+}
+.markdown blockquote p{
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.7;
+}
+.markdown blockquote p:last-child{margin: 0;}
+blockquote:before, blockquote:after {content: "";}
+
+/* 斜体 && 加粗 && 超链接 底线 */
+.markdown em{font-style: italic;}
+.markdown strong{font-weight: bold;}
+.markdown a{color: #4094c7;text-decoration: none;}
+.markdown hr{
+  margin: 0 0 20px;
+  border-top: 1px solid #d9d9d9;
+}
+
+/*代码*/
+.markdown pre{
+  word-wrap: normal;
+  word-break: break-all;
+  white-space: pre;
+  overflow: auto;
+  overflow-x: auto;
+  margin-bottom: 20px;
+
+  background: #f6f6f6;
+  color: #657b83;
+  -webkit-text-size-adjust: none;
+
+  max-height: 500px;
+
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.15);
+
+  background: #002b36;
+  color: #839496;
+}
+.markdown pre code{}
+
+/*表格*/
+.markdown table{
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  border-left: none;
+  max-width: 100%;
+  background-color: transparent;
+}
+.markdown table th,.markdown table td{
+  padding: 8px;
+  border-left: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: center;
+}
+.markdown table th{
+  font-weight: bold;
+  vertical-align: center;
+}
+
+/* 图片 */
+.markdown .image{
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.markdown .image img{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.markdown .imageDesc{
+  min-width: 20%;
+  min-height: 22px;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 13px;
+  color: #999999;
+  font-style: italic;
+  line-height: 1.7;
+}
