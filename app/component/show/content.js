@@ -2,6 +2,8 @@
 import React from 'react'
 import style from '../css/index.css'
 import Markdown from 'react-markdown'
+import assign from 'lodash.assign'
+import Code from './code'
 
 class Component extends React.Component{
     constructor(props){
@@ -10,7 +12,10 @@ class Component extends React.Component{
 	render(){
     	return(
             <div className='show_content'>
-                <Markdown source={this.props.content} />
+                <Markdown
+                    source={this.props.content}
+                    renderers = {assign({},Markdown.renderers,{CodeBlock: Code})}
+                />
             </div>
         )
 	}
