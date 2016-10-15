@@ -12,7 +12,7 @@ class Component extends React.Component{
     	return(
             <div className={style.edit}>
 				<Work {...this.props.action} />
-                <Show {...this.props.store} />
+                <Show {...this.props.store.edit} />
             </div>
         )
 	}

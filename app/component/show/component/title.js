@@ -1,6 +1,6 @@
 'use strict'
 import React from 'react'
-import style from '../css/index.css'
+import style from '../../css/index.css'
 
 class Component extends React.Component{
     constructor(props){
@@ -8,7 +8,7 @@ class Component extends React.Component{
     }
 	render(){
     	return(
-            <div className='titleDesc'>author: {this.props.author}</div>
+            <h1 className='title'>{this.props.title}</h1>
         )
 	}
 }

@@ -1,6 +1,7 @@
 'use strict'
 import React from 'react'
-import style from '../css/index.css'
+import style from '../../css/index.css'
+import Highlight from 'react-highlight'
 
 class Component extends React.Component{
     constructor(props){
@@ -8,7 +9,9 @@ class Component extends React.Component{
     }
 	render(){
     	return(
-            <h1 className='title'>{this.props.title}</h1>
+            <Highlight className={this.props.language}>
+                {this.props.literal}
+            </Highlight>
         )
 	}
 }

@@ -15,9 +15,7 @@ let {Component} = React
 let mapStateToProps = (state) =>{
     return {
         store:{
-            Title:state.Title,
-            Author:state.Author,
-            Content:state.Content,
+            edit:state.Edit,
         }
     }
 }

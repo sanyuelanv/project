@@ -6,15 +6,12 @@ export let titleAction = (title = '标题')=>{
     title
   }
 }
-
-export let authorAction = (author = 'author')=>{
+export let authorAction = (author = '作者')=>{
   return {
     type:types.AUTHOR,
     author
   }
 }
-
-
 export let contentAction = (content = '')=>{
   return {
     type:types.CONTENT,

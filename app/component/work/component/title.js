@@ -1,23 +1,23 @@
 'use strict'
 import React from 'react'
-import style from '../css/index.css'
+import style from '../../css/index.css'
 
 class Component extends React.Component{
 	constructor(props){
         super(props)
     }
 	oninput(e){
-		var content = e.target.value
-		this.props.contentAction(content)
+		var title = e.target.value
+		this.props.titleAction(title)
 	}
 	render(){
     	return(
-            <textarea
-				className={style.workMain}
-				id='input_content'
+            <input
+				className={style.workTitle}
+				type="text"
 				onInput = {this.oninput.bind(this)}
-			>
-			</textarea>
+				placeholder={this.props.placeholder}
+			/>
         )
 	}
 }

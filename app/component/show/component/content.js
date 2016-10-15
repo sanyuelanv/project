@@ -1,6 +1,6 @@
 'use strict'
 import React from 'react'
-import style from '../css/index.css'
+import style from '../../css/index.css'
 import Markdown from 'react-markdown'
 import assign from 'lodash.assign'
 import Code from './code'
