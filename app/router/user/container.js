@@ -10,11 +10,15 @@ class Component extends React.Component{
 	constructor(props){
 		super(props)
 	}
+	componentWillMount(){
+		let {AjaxFunc} = this.props.action
+		AjaxFunc()
+	}
 	render(){
     	return(
 			<div className ={commonStyle.container}>
 				<div className={commonStyle.content}>
-					{this.props.state.Increase.count}
+					{this.props.state.Ajax.data}
 				</div>
 				<Bar route = {'user'}></Bar>
 			</div>

@@ -9,10 +9,7 @@ let {Component} = React
 
 let mapStateToProps = (state) =>{
     return {
-        state:{
-            Increase:state.Increase,
-            Theme:state.Theme,
-        }
+        state:state
     }
 }
 

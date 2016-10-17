@@ -1,11 +1,11 @@
 //合并两个reducer
 import { combineReducers } from 'redux'
 import Increase from './increaseReducer'
-import Theme from './themeReducer'
+import Ajax from './ajaxReducer'
 
 const rootReducer = combineReducers({
     Increase,
-    Theme
+    Ajax
 })
 
 export default rootReducer

@@ -10,6 +10,9 @@ class Component extends React.Component{
 	constructor(props){
 		super(props)
 	}
+	componentWillMount(){
+		
+	}
 	_addHandle(num){
 		let {increaseAction} = this.props.action
         increaseAction(num)

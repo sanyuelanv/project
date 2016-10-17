@@ -1,4 +1,5 @@
 'use strict'
+import 'whatwg-fetch'
 import React from 'react'
 import Home from './home'
 import User from './user'
