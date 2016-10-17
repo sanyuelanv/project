@@ -3,7 +3,7 @@ import {createStore,applyMiddleware} from 'redux'
 import createLogger from 'redux-logger'
 import rootReducer from '../reducer/'
 let createStoreWithMiddleware = applyMiddleware(
-  createLogger(),
+  // createLogger(),
 )(createStore)
 let store = createStoreWithMiddleware(rootReducer)
 

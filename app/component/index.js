@@ -11,7 +11,8 @@ class Component extends React.Component{
 	render(){
     	return(
             <div className={style.edit}>
-				<Work {...this.props.action} />
+				<Work
+				{...this.props.action} content = {this.props.store.edit.content} />
                 <Show {...this.props.store.edit} />
             </div>
         )
