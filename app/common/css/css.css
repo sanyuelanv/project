@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex: 1.0;
+    -webkit-flex: 1.0;
+    -webkit-box-flex: 1.0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
