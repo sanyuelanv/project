@@ -9,10 +9,9 @@ import Bar from '../../common/component/bar'
 class Component extends React.Component{
 	constructor(props){
 		super(props)
+		console.log(props)
 	}
-	componentWillMount(){
-		
-	}
+	componentWillMount(){}
 	_addHandle(num){
 		let {increaseAction} = this.props.action
         increaseAction(num)
@@ -24,7 +23,7 @@ class Component extends React.Component{
 					className={commonStyle.content}
 					onClick={()=>{this._addHandle(1)}}
 				>
-					{this.props.state.Increase.count}
+					{this.props.increase.count}
 				</div>
 				<Bar route = {'home'}></Bar>
 			</div>

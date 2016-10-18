@@ -25,7 +25,7 @@ class Component extends React.Component{
 					className={commonStyle.content}
 					onClick={()=>{this._addHandle(1)}}
 				>
-					{this.props.state.Ajax.data}
+					{this.props.ajax.data}
 				</div>
 				<Bar route = {'user'}></Bar>
 			</div>
