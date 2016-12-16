@@ -4,7 +4,7 @@
   "description": "make a new project with webpack",
   "main": "index.js",
   "scripts": {
-    "dep": "NODE_ENV='production' webpack -p --config webpack.production.config.js",
+    "dep": "NODE_ENV='production' webpack -p --progress --colors --config webpack.production.config.js",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
   },
   "repository": {
@@ -28,7 +28,8 @@
     "redux-logger": "^2.7.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.0"
+    "webpack-dev-server": "^1.15.0",
+    "extract-text-webpack-plugin": "^1.0.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.13.0",
