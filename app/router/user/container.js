@@ -10,10 +10,7 @@ class Component extends React.Component{
 	constructor(props){
 		super(props)
 	}
-	componentWillMount(){
-		let {AjaxFunc} = this.props.action
-		AjaxFunc()
-	}
+	componentWillMount(){}
 	_addHandle(){
 		let {AjaxFunc} = this.props.action
 		AjaxFunc()
