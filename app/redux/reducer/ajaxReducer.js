@@ -1,7 +1,7 @@
 import * as types from '../action/types'
 
 let reducer = (state = {
-    data: 0
+    data: 1
 }, action) => {
     let count = state.count
     switch (action.type) {

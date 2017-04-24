@@ -28,10 +28,10 @@ module.exports = {
         exclude: [node_module_dir],
       },
       {
-          test: /\.css$/,
-          use: ["style-loader",'css-loader?modules&localIdentName=_[local]_[hash:base64:5]'],
-          include: [path.resolve(__dirname, 'app')],
-          exclude: [node_module_dir],
+        test: /\.css$/,
+        use: ["style-loader", 'css-loader?modules&localIdentName=_[local]_[hash:base64:5]'],
+        include: [path.resolve(__dirname, 'app')],
+        exclude: [node_module_dir],
       },
     ]
   },

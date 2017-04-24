@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 var node_module_dir = path.resolve(__dirname, 'node_module')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -38,6 +39,7 @@ module.exports = {
       minChunks: Infinity,
       filename: 'react.js'
     }),
+    new ExtractTextPlugin('../css/style.css'),
   ],
   module: {
     rules: [{
@@ -48,7 +50,9 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", 'css-loader?modules&localIdentName=_[local]_[hash:base64:5]'],
+        use: ExtractTextPlugin.extract({
+          use: 'css-loader?modules&localIdentName=_[local]_[hash:base64:5]'
+        }),
         include: [path.resolve(__dirname, 'app')],
         exclude: [node_module_dir],
       },

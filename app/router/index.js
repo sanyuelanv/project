@@ -3,21 +3,16 @@ import 'whatwg-fetch'
 import React from 'react'
 import Home from './home'
 import User from './user'
-import {
-  Router,
-  Route,
-  Link,
-  browserHistory
-} from 'react-router'
-
-
+import {Route,BrowserRouter} from 'react-router-dom'
 class Component extends React.Component {
   render() {
     return (
-      <Router history={browserHistory}>
-           <Route path="/" component={Home} />
-           <Route path="/user" component={User}></Route>
-      </Router>
+      <BrowserRouter>
+        <div className='main'>
+         <Route exact path="/" component={Home} />
+         <Route exact path="/user" component={User}></Route>
+        </div>
+      </BrowserRouter>
     )
   }
 }
