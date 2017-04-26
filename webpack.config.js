@@ -5,6 +5,9 @@ var node_module_dir = path.resolve(__dirname, 'node_module')
 module.exports = {
   entry: path.resolve(__dirname, 'app/main.js'),
   output: {
+    path: path.resolve(__dirname, 'build'),
+    chunkFilename: '[name].[chunkhash:5].chunk.js',
+    publicPath: '/',
     filename: 'bundle.js'
   },
   devServer: {
@@ -15,9 +18,10 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      __DEV__: JSON.stringify(JSON.parse(process.env.BUILD_DEV || 'true'))
+      __DEV__: JSON.stringify(JSON.parse(process.env.NODE_ENV || 'true'))
     }),
     new webpack.HotModuleReplacementPlugin(),
+    //在热加载时直接返回更新文件名，而不是文件的id。
     new webpack.NamedModulesPlugin(),
   ],
   module: {

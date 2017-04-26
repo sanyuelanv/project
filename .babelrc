@@ -5,6 +5,12 @@
     "react"
   ],
   "plugins": [
-    "transform-runtime"
+    "transform-runtime",
+    "transform-class-properties",["transform-imports", {
+      "react-router-dom": {
+        "transform": "react-router-dom/${member}",
+        "preventFullImport": true
+      }
+    }]
   ]
 }
